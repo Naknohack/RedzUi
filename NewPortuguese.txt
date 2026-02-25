@@ -1,0 +1,21 @@
+{
+  "DesplockHub | Community": ["DesplockHub | Comunidade", "Entre no servidor para receber atualizações"],
+
+  "Select Tool": ["Selecionar Ferramenta", "Escolha a ferramenta que deseja usar"],
+
+  "UI Scale": ["Escala da UI", "Ajustar o tamanho da interface"],
+
+  "Auto Farm Level": ["Farmar Level Automático", "Farmar nível automaticamente 1-2650"],
+
+  "Farm Level New": ["Novo Farm de Level", "Farmar nível automaticamente 2650 - 2750"],
+
+  "Auto Farm Nearest": ["Farmar Inimigos Próximos", "Farmar automaticamente os mobs mais próximos"],
+
+  "Auto Pirates Sea": ["Raid Pirata Automática", "Farmar Raid Pirata automaticamente"],
+
+  "Unban Fast Attack - M1 Fruit": ["Desbanir Fast Attack - M1 Fruta", "Ativar correção para ataque rápido com fruta"],
+
+  "Job ID": ["Job ID", "Cole o Job ID aqui..."],
+
+  "Join Clipboard": ["Entrar via Clipboard", "Entrar no servidor usando o Job ID copiado"]
+}
