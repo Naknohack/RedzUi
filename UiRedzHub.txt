@@ -1534,36 +1534,29 @@ WindowScale.Parent = MainFrame
 		Name = "Control Tab Size"
 	}))
 	
-	local SmoothX, SmoothY, SmoothSide = nil, nil, nil
+local SmoothX, SmoothY, SmoothSide = nil, nil, nil
 
 local function Lerp(a,b,t)
 	return a + (b-a)*t
 end
-	local function ControlSize()
 
-	local Pos1 = ControlSize1.Position
-	local Pos2 = ControlSize2.Position
-	
-	local TargetX = math.clamp(Pos1.X.Offset, 430, 1000)
-	local TargetY = math.clamp(Pos1.Y.Offset, 200, 500)
-	local TargetSide = math.clamp(Pos2.X.Offset, 135, 250)
+local function Snap(value, step)
+	return math.floor(value / step + 0.5) * step
+end
+	local function ControlSize(targetX, targetY, targetSide)
 
-	SmoothX = SmoothX and Lerp(SmoothX, TargetX, 0.25) or TargetX
-	SmoothY = SmoothY and Lerp(SmoothY, TargetY, 0.25) or TargetY
-	SmoothSide = SmoothSide and Lerp(SmoothSide, TargetSide, 0.25) or TargetSide
+	local smoothSpeed = 0.18
+	local snapStep = 9
 
-	ControlSize1.Position = UDim2.fromOffset(SmoothX, SmoothY)
-	ControlSize2.Position = UDim2.new(0, SmoothSide, 1, 0)
+	SmoothX = SmoothX and Lerp(SmoothX, targetX, smoothSpeed) or targetX
+	SmoothY = SmoothY and Lerp(SmoothY, targetY, smoothSpeed) or targetY
+	SmoothSide = SmoothSide and Lerp(SmoothSide, targetSide, smoothSpeed) or targetSide
 
-	MainFrame.Size = UDim2.fromOffset(SmoothX, SmoothY)
-	MainScroll.Size = UDim2.new(0, SmoothSide, 1, -TopBar.Size.Y.Offset)
+	SmoothX = Snap(SmoothX, snapStep)
+	SmoothY = Snap(SmoothY, snapStep)
+	SmoothSide = Snap(SmoothSide, snapStep)
 
-	Containers.Size = UDim2.new(
-		1,
-		-SmoothSide,
-		1,
-		-TopBar.Size.Y.Offset
-	)
+	return SmoothX, SmoothY, SmoothSide
 end
 	
 	ControlSize1:GetPropertyChangedSignal("Position"):Connect(ControlSize)
