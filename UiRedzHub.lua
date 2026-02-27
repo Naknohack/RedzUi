@@ -51,8 +51,8 @@ local redzlib = {
 		Version = "1.1.0"
 	},
 	Save = {
-		UISize = {550, 380},
-		TabSize = 160,
+		UISize = {1050, 520},
+		TabSize = 300,
 		Theme = "Darker"
 	},
 	Settings = {},
@@ -1421,16 +1421,25 @@ function redzlib:MakeWindow(Configs)
 		end
 	end;LoadFile()
 	
-	local UISizeX, UISizeY = unpack(redzlib.Save.UISize)
-	local MainFrame = InsertTheme(Create("ImageButton", ScreenGui, {
-		Size = UDim2.fromOffset(UISizeX, UISizeY),
-		Position = UDim2.new(0.5, -UISizeX/2, 0.5, -UISizeY/2),
-		BackgroundTransparency = 0.03,
-		Name = "Hub"
-	}), "Main")
-	Make("Gradient", MainFrame, {
-		Rotation = 45
-	})MakeDrag(MainFrame)
+local UISizeX, UISizeY = unpack(redzlib.Save.UISize)
+
+local MainFrame = InsertTheme(Create("ImageButton", ScreenGui, {
+	Size = UDim2.fromOffset(UISizeX, UISizeY),
+	Position = UDim2.new(0.5, -UISizeX/2, 0.5, -UISizeY/2),
+	BackgroundTransparency = 0.03,
+	Name = "Hub"
+}), "Main")
+
+-- 🔥 ADD THIS
+local WindowScale = Instance.new("UIScale")
+WindowScale.Name = "WindowScale"
+WindowScale.Scale = 1
+WindowScale.Parent = MainFrame
+
+Make("Gradient", MainFrame, {
+	Rotation = 45
+})
+MakeDrag(MainFrame)
 	
 	local MainCorner = Make("Corner", MainFrame)
 	
@@ -1526,14 +1535,41 @@ function redzlib:MakeWindow(Configs)
 	}))
 	
 	local function ControlSize()
-		local Pos1, Pos2 = ControlSize1.Position, ControlSize2.Position
-		ControlSize1.Position = UDim2.fromOffset(math.clamp(Pos1.X.Offset, 430, 1000), math.clamp(Pos1.Y.Offset, 200, 500))
-		ControlSize2.Position = UDim2.new(0, math.clamp(Pos2.X.Offset, 135, 250), 1, 0)
-		
-		MainScroll.Size = UDim2.new(0, ControlSize2.Position.X.Offset, 1, -TopBar.Size.Y.Offset)
-		Containers.Size = UDim2.new(1, -MainScroll.Size.X.Offset, 1, -TopBar.Size.Y.Offset)
-		MainFrame.Size = ControlSize1.Position
-	end
+	local Pos1, Pos2 = ControlSize1.Position, ControlSize2.Position
+
+	ControlSize1.Position = UDim2.fromOffset(
+		math.clamp(Pos1.X.Offset, 430, 1000),
+		math.clamp(Pos1.Y.Offset, 200, 500)
+	)
+
+	ControlSize2.Position = UDim2.new(
+		0,
+		math.clamp(Pos2.X.Offset, 135, 250),
+		1,
+		0
+	)
+	
+	MainScroll.Size = UDim2.new(
+		0,
+		ControlSize2.Position.X.Offset,
+		1,
+		-TopBar.Size.Y.Offset
+	)
+
+	Containers.Size = UDim2.new(
+		1,
+		-MainScroll.Size.X.Offset,
+		1,
+		-TopBar.Size.Y.Offset
+	)
+
+	MainFrame.Size = UDim2.new(
+		0,
+		ControlSize1.Position.X.Offset,
+		0,
+		ControlSize1.Position.Y.Offset
+	)
+end
 	
 	ControlSize1:GetPropertyChangedSignal("Position"):Connect(ControlSize)
 	ControlSize2:GetPropertyChangedSignal("Position"):Connect(ControlSize)
