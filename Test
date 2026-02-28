@@ -1,5 +1,3 @@
--- decom at discord.gg/jwWnP8qJPw
-
 local SilentAimModule = {}
 
 local Players = game:GetService("Players")
