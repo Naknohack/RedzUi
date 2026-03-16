@@ -3578,7 +3578,7 @@ task.spawn(function()
     task.wait(2)
     bearlib:Notify({
         Title = "NakHub V4",
-        Message = "UI Bear Library Download Completed",
+        Message = "UI Download Completed",
         Duration = 10
     })
 end)
