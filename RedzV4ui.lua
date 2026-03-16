@@ -3053,7 +3053,20 @@ function bearlib:MakeWindow(Configs)
             Window:Minimize()
         end)
     
-    return Window
+    local Flag = Instance.new("ImageLabel")
+Flag.Name = "VNFlagIcon"
+Flag.Parent = ToggleButton
+Flag.BackgroundTransparency = 1
+Flag.Image = "rbxassetid://90723031696932"
+Flag.Size = UDim2.fromOffset(28, 18)
+Flag.AnchorPoint = Vector2.new(0.5, 0.5)
+Flag.Position = UDim2.new(1, -2, 0, 2)
+Flag.ZIndex = 100
+Flag.Rotation = 15
+Flag.Visible = false -- tắt hiển thị icon
+end)
+
+return Window
 end
 
 local NotificationHolder = nil
