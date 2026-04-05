@@ -1527,14 +1527,23 @@ function redzlib:MakeWindow(Configs)
 	}))
 	
 	local function ControlSize()
-		local Pos1, Pos2 = ControlSize1.Position, ControlSize2.Position
-		ControlSize1.Position = UDim2.fromOffset(math.clamp(Pos1.X.Offset, 430, 1000), math.clamp(Pos1.Y.Offset, 200, 500))
-		ControlSize2.Position = UDim2.new(0, math.clamp(Pos2.X.Offset, 135, 250), 1, 0)
-		
-		MainScroll.Size = UDim2.new(0, ControlSize2.Position.X.Offset, 1, -TopBar.Size.Y.Offset)
-		Containers.Size = UDim2.new(1, -MainScroll.Size.X.Offset, 1, -TopBar.Size.Y.Offset)
-		MainFrame.Size = ControlSize1.Position
-	end
+	local Pos1, Pos2 = ControlSize1.Position, ControlSize2.Position
+	
+	-- 🔥 TĂNG GIỚI HẠN CHIỀU CAO
+	ControlSize1.Position = UDim2.fromOffset(
+		math.clamp(Pos1.X.Offset, 430, 1000),
+		math.clamp(Pos1.Y.Offset, 200, 900) -- ✅ từ 500 -> 900
+	)
+	
+	ControlSize2.Position = UDim2.new(
+		0, math.clamp(Pos2.X.Offset, 135, 250),
+		1, 0
+	)
+	
+	MainScroll.Size = UDim2.new(0, ControlSize2.Position.X.Offset, 1, -TopBar.Size.Y.Offset)
+	Containers.Size = UDim2.new(1, -MainScroll.Size.X.Offset, 1, -TopBar.Size.Y.Offset)
+	MainFrame.Size = ControlSize1.Position
+		end
 	
 	ControlSize1:GetPropertyChangedSignal("Position"):Connect(ControlSize)
 	ControlSize2:GetPropertyChangedSignal("Position"):Connect(ControlSize)
