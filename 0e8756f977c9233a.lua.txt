@@ -1,0 +1,1879 @@
+-- ts file was generated at discord.gg/25ms
+
+local _TweenService = game:GetService('TweenService')
+local _ScreenGui = Instance.new('ScreenGui')
+
+_ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild('PlayerGui')
+
+local _Frame = Instance.new('Frame')
+
+_Frame.AnchorPoint = Vector2.new(0.5, 0.95)
+_Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+_Frame.BackgroundTransparency = 1
+_Frame.BorderColor3 = Color3.new(0, 0, 0)
+_Frame.BorderSizePixel = 0
+_Frame.Position = UDim2.new(0.5, 0, 0.95, 0)
+_Frame.Size = UDim2.new(0, 100, 0, 100)
+_Frame.Visible = true
+_Frame.Parent = _ScreenGui
+
+function Neww(p4, p5)
+    local _Frame2 = Instance.new('Frame')
+
+    _Frame2.BackgroundColor3 = Color3.new(1, 1, 1)
+    _Frame2.BorderColor3 = Color3.new(0, 0, 0)
+    _Frame2.BorderSizePixel = 0
+    _Frame2.BackgroundTransparency = 1
+    _Frame2.Size = UDim2.new(0, 100, 0, 0)
+    _Frame2.Visible = true
+    _Frame2.Parent = _Frame
+
+    local _Frame3 = Instance.new('Frame')
+
+    _Frame3.AnchorPoint = Vector2.new(0.5, 1)
+    _Frame3.AutomaticSize = Enum.AutomaticSize.X
+    _Frame3.BackgroundColor3 = Color3.new(0.141, 0.141, 0.141)
+    _Frame3.BackgroundTransparency = 0.2
+    _Frame3.BorderColor3 = Color3.new(0, 0, 0)
+    _Frame3.Position = UDim2.new(0.5, 0, 1, 60)
+    _Frame3.Size = UDim2.new(0, 0, 0, 30)
+    _Frame3.Visible = true
+    _Frame3.Parent = _Frame2
+
+    local _UICorner = Instance.new('UICorner')
+
+    _UICorner.CornerRadius = UDim.new(0, 6)
+    _UICorner.Parent = _Frame3
+
+    local _UIPadding = Instance.new('UIPadding')
+
+    _UIPadding.PaddingBottom = UDim.new(0, 3)
+    _UIPadding.PaddingLeft = UDim.new(0, 3)
+    _UIPadding.PaddingRight = UDim.new(0, 3)
+    _UIPadding.PaddingTop = UDim.new(0, 3)
+    _UIPadding.Parent = _Frame3
+
+    local _UIStroke = Instance.new('UIStroke')
+
+    _UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    _UIStroke.Color = Color3.new(0.031, 0.031, 0.031)
+    _UIStroke.Parent = _Frame3
+
+    local _TextLabel = Instance.new('TextLabel')
+
+    _TextLabel.Font = Enum.Font.Gotham
+    _TextLabel.Text = p4
+    _TextLabel.TextColor3 = Color3.new(0.784, 0.784, 0.784)
+    _TextLabel.TextSize = 14
+    _TextLabel.AutomaticSize = Enum.AutomaticSize.X
+    _TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+    _TextLabel.BackgroundTransparency = 1
+    _TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+    _TextLabel.BorderSizePixel = 0
+    _TextLabel.Size = UDim2.new(0, 0, 0, 24)
+    _TextLabel.Visible = true
+    _TextLabel.Parent = _Frame3
+
+    local _UIPadding2 = Instance.new('UIPadding')
+
+    _UIPadding2.PaddingLeft = UDim.new(0, 5)
+    _UIPadding2.PaddingRight = UDim.new(0, 30)
+    _UIPadding2.Parent = _TextLabel
+
+    local _TextButton = Instance.new('TextButton')
+
+    _TextButton.Font = Enum.Font.SourceSans
+    _TextButton.Text = ''
+    _TextButton.TextColor3 = Color3.new(0, 0, 0)
+    _TextButton.TextSize = 14
+    _TextButton.AnchorPoint = Vector2.new(1, 0.5)
+    _TextButton.BackgroundColor3 = Color3.new(0, 0, 0)
+    _TextButton.BackgroundTransparency = 1
+    _TextButton.BorderColor3 = Color3.new(0, 0, 0)
+    _TextButton.BorderSizePixel = 0
+    _TextButton.Position = UDim2.new(1, 0, 0.5, 0)
+    _TextButton.Size = UDim2.new(0, 24, 0, 24)
+    _TextButton.Visible = true
+    _TextButton.Parent = _Frame3
+
+    local _UICorner2 = Instance.new('UICorner')
+
+    _UICorner2.CornerRadius = UDim.new(0, 5)
+    _UICorner2.Parent = _TextButton
+
+    local _ImageButton = Instance.new('ImageButton')
+
+    _ImageButton.Image = 'rbxassetid://3926305904'
+    _ImageButton.ImageColor3 = Color3.new(0.784, 0.784, 0.784)
+    _ImageButton.ImageRectOffset = Vector2.new(924, 724)
+    _ImageButton.ImageRectSize = Vector2.new(36, 36)
+    _ImageButton.AnchorPoint = Vector2.new(0.5, 0.5)
+    _ImageButton.BackgroundTransparency = 1
+    _ImageButton.LayoutOrder = 3
+    _ImageButton.Position = UDim2.new(0.5, 0, 0.5, 0)
+    _ImageButton.Size = UDim2.new(0, 18, 0, 18)
+    _ImageButton.Visible = true
+    _ImageButton.ZIndex = 2
+    _ImageButton.Parent = _TextButton
+
+    _TweenService:Create(_Frame3, TweenInfo.new(0.2, Enum.EasingStyle.Quint), {
+        Position = UDim2.new(0.5, 0, 1, 0),
+    }):Play()
+    _TweenService:Create(_Frame2, TweenInfo.new(0.2, Enum.EasingStyle.Quint), {
+        Size = UDim2.new(0, 100, 0, 35),
+    }):Play()
+
+    local function v16()
+        _TweenService:Create(_ImageButton, TweenInfo.new(0.15, Enum.EasingStyle.Quint), {ImageTransparency = 1}):Play()
+        _TweenService:Create(_TextButton, TweenInfo.new(0.15, Enum.EasingStyle.Quint), {BackgroundTransparency = 1}):Play()
+        _TweenService:Create(_TextLabel, TweenInfo.new(0.15, Enum.EasingStyle.Quint), {
+            TextColor3 = Color3.new(0.784, 0.784, 0.784, 0),
+        }):Play()
+        task.wait(0.17)
+        _TweenService:Create(_Frame3, TweenInfo.new(0.25, Enum.EasingStyle.Quint), {BackgroundTransparency = 1}):Play()
+        _TweenService:Create(_UIStroke, TweenInfo.new(0.24, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
+        task.wait(0.05)
+        _TweenService:Create(_Frame2, TweenInfo.new(0.2, Enum.EasingStyle.Quint), {
+            Size = UDim2.new(0, 100, 0, 0),
+        }):Play()
+        task.wait(0.2)
+        _Frame2:Destroy()
+    end
+
+    _TextButton.MouseEnter:Connect(function()
+        _TweenService:Create(_TextButton, TweenInfo.new(0.25, Enum.EasingStyle.Quint), {BackgroundTransparency = 0.8}):Play()
+        _TweenService:Create(_ImageButton, TweenInfo.new(0.3, Enum.EasingStyle.Quint), {
+            ImageColor3 = Color3.new(0.89, 0.054, 0.054),
+        }):Play()
+    end)
+    _TextButton.MouseLeave:Connect(function()
+        _TweenService:Create(_TextButton, TweenInfo.new(0.25, Enum.EasingStyle.Quint), {BackgroundTransparency = 1}):Play()
+        _TweenService:Create(_ImageButton, TweenInfo.new(0.3, Enum.EasingStyle.Quint), {
+            ImageColor3 = Color3.new(0.784, 0.784, 0.784),
+        }):Play()
+    end)
+    _TextButton.MouseButton1Click:Connect(v16)
+    _ImageButton.MouseButton1Click:Connect(v16)
+    task.delay(tonumber(p5) and p5 and p5 or 10, v16)
+end
+
+local _ScreenGui2 = Instance.new('ScreenGui')
+local _Frame4 = Instance.new('Frame')
+local _UICorner3 = Instance.new('UICorner')
+local _TextLabel2 = Instance.new('TextLabel')
+local _TextButton2 = Instance.new('TextButton')
+local _UICorner4 = Instance.new('UICorner')
+local _UIGradient = Instance.new('UIGradient')
+local _UIGradient2 = Instance.new('UIGradient')
+local _TextButton3 = Instance.new('TextButton')
+local _UICorner5 = Instance.new('UICorner')
+local _UIGradient3 = Instance.new('UIGradient')
+local _ImageButton2 = Instance.new('ImageButton')
+local _TextBox = Instance.new('TextBox')
+local _UICorner6 = Instance.new('UICorner')
+local _TextLabel3 = Instance.new('TextLabel')
+local _ImageButton3 = Instance.new('ImageButton')
+local _UICorner7 = Instance.new('UICorner')
+
+_ScreenGui2.Name = 'SeraGetKey'
+_ScreenGui2.Parent = game.Players.LocalPlayer:WaitForChild('PlayerGui')
+_ScreenGui2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+_Frame4.Name = 'Main'
+_Frame4.Parent = _ScreenGui2
+_Frame4.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+_Frame4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_Frame4.BorderSizePixel = 0
+_Frame4.Position = UDim2.new(0.5, -175, 0.5, -62)
+_Frame4.Size = UDim2.new(0, 350, 0, 125)
+_UICorner3.CornerRadius = UDim.new(0, 0)
+_UICorner3.Parent = _Frame4
+_TextLabel2.Parent = _Frame4
+_TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_TextLabel2.BackgroundTransparency = 1
+_TextLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_TextLabel2.BorderSizePixel = 0
+_TextLabel2.Position = UDim2.new(0.120999999, 0, 0, 4)
+_TextLabel2.Size = UDim2.new(0, 113, 0, 36)
+_TextLabel2.Font = Enum.Font.SourceSansBold
+_TextLabel2.Text = 'Sera Hub - Key System '
+_TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_TextLabel2.TextSize = 18
+_TextLabel2.TextXAlignment = Enum.TextXAlignment.Left
+_TextButton2.Parent = _Frame4
+_TextButton2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_TextButton2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_TextButton2.BorderSizePixel = 0
+_TextButton2.ClipsDescendants = true
+_TextButton2.Position = UDim2.new(0.0500000007, 0, 0.751999974, 0)
+_TextButton2.Size = UDim2.new(0, 113, 0, 25)
+_TextButton2.Font = Enum.Font.SourceSansBold
+_TextButton2.Text = 'Copy Link Key'
+_TextButton2.TextColor3 = Color3.fromRGB(0, 0, 0)
+_TextButton2.TextSize = 16
+_TextButton2.TextWrapped = true
+
+_TextButton2.MouseButton1Click:Connect(function()
+    setclipboard('https://serahub.site/getkey')
+    New('Copied link get key!', 2)
+end)
+
+_UICorner4.CornerRadius = UDim.new(0, 0)
+_UICorner4.Parent = _TextButton2
+_UIGradient.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 96, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(96, 239, 255)),
+})
+_UIGradient.Parent = _TextButton2
+_UIGradient2.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 96, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(96, 239, 255)),
+})
+_UIGradient2.Parent = _TextButton2
+_TextButton3.Parent = _Frame4
+_TextButton3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_TextButton3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_TextButton3.BorderSizePixel = 0
+_TextButton3.ClipsDescendants = true
+_TextButton3.Position = UDim2.new(0.600000024, 0, 0.751999974, 0)
+_TextButton3.Size = UDim2.new(0, 115, 0, 25)
+_TextButton3.Font = Enum.Font.SourceSansBold
+_TextButton3.Text = 'Copy Discord Link'
+_TextButton3.TextColor3 = Color3.fromRGB(0, 0, 0)
+_TextButton3.TextSize = 16
+
+_TextButton3.MouseButton1Click:Connect(function()
+    setclipboard('https://discord.gg/GRQaKeGFHj')
+    New('Copied link discord server!', 2)
+end)
+
+_UICorner5.CornerRadius = UDim.new(0, 0)
+_UICorner5.Parent = _TextButton3
+_UIGradient3.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 96, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(96, 239, 255)),
+})
+_UIGradient3.Parent = _TextButton3
+_ImageButton2.Name = 'lock'
+_ImageButton2.Parent = _Frame4
+_ImageButton2.BackgroundColor3 = Color3.fromRGB(161, 160, 163)
+_ImageButton2.BackgroundTransparency = 1
+_ImageButton2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+_ImageButton2.Position = UDim2.new(0.0289999992, 0, 0.115999997, 0)
+_ImageButton2.Size = UDim2.new(0, 25, 0, 25)
+_ImageButton2.ZIndex = 2
+_ImageButton2.Image = 'rbxassetid://3926305904'
+_ImageButton2.ImageRectOffset = Vector2.new(4, 684)
+_ImageButton2.ImageRectSize = Vector2.new(36, 36)
+_TextBox.Parent = _Frame4
+_TextBox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+_TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_TextBox.BorderSizePixel = 0
+_TextBox.ClipsDescendants = true
+_TextBox.Position = UDim2.new(0.0289999992, 0, 0.416000009, 0)
+_TextBox.Size = UDim2.new(0, 295, 0, 35)
+_TextBox.Font = Enum.Font.SourceSans
+_TextBox.PlaceholderText = "insert key (if you can't copy just join discord)"
+_TextBox.Text = ''
+_TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+_TextBox.TextSize = 16
+_UICorner6.CornerRadius = UDim.new(0, 0)
+_UICorner6.Parent = _TextBox
+_TextLabel3.Parent = _Frame4
+_TextLabel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_TextLabel3.BackgroundTransparency = 1
+_TextLabel3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_TextLabel3.BorderSizePixel = 0
+_TextLabel3.Position = UDim2.new(0.0289999992, 0, 0.416000009, 0)
+_TextLabel3.Size = UDim2.new(0, 295, 0, 35)
+_TextLabel3.Font = Enum.Font.SourceSansBold
+_TextLabel3.Text = ''
+_TextLabel3.TextColor3 = Color3.fromRGB(255, 255, 255)
+_TextLabel3.TextSize = 16
+_TextLabel3.TextXAlignment = Enum.TextXAlignment.Left
+_ImageButton3.Parent = _Frame4
+_ImageButton3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_ImageButton3.BackgroundTransparency = 0.75
+_ImageButton3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_ImageButton3.BorderSizePixel = 0
+_ImageButton3.Position = UDim2.new(0.885999978, 0, 0.432000011, 0)
+_ImageButton3.Size = UDim2.new(0, 32, 0, 32)
+_ImageButton3.Image = 'rbxassetid://3926305904'
+_ImageButton3.ImageRectOffset = Vector2.new(84, 204)
+_ImageButton3.ImageRectSize = Vector2.new(40, 40)
+
+_ImageButton3.MouseButton1Click:Connect(function()
+    if _TextBox.Text == '' then
+        Neww('SeraHub: Please do not leave the key input field blank', 4)
+    else
+        checkKLumos45(_TextBox.Text)
+    end
+end)
+
+_UICorner7.CornerRadius = UDim.new(0, 0)
+_UICorner7.Parent = _ImageButton3
+
+function split(p34, p35)
+    local _s = string.format('([^%s]+)', p35)
+    local v37, v38, v39 = string.gmatch(p34, _s)
+    local v40 = {}
+
+    while true do
+        v39 = v37(v38, v39)
+
+        if v39 == nil then
+            break
+        end
+
+        table.insert(v40, v39)
+    end
+
+    return v40
+end
+
+local u41 = 'xNT3LG74sgUPupiMF0B5ybRQkmKtH'
+local u42 = '+e6EO'
+local u43 = 'nrf8ozvShcZDAa'
+
+b = u41 .. '9d/' .. u43 .. '2ICVlJjXWwqY1' .. u42
+
+function encode(p44)
+    return (p44:gsub('.', function(p45)
+        local v46 = p45:byte()
+        local v47 = ''
+
+        for v48 = 8, 1, -1 do
+            v47 = v47 .. (v46 % 2 ^ v48 - v46 % 2 ^ (v48 - 1) > 0 and '1' or '0')
+        end
+
+        return v47
+    end) .. '0000'):gsub('%d%d%d?%d?%d?%d?', function(p49)
+        if #p49 < 6 then
+            return ''
+        end
+
+        local v50 = 0
+
+        for v51 = 1, 6 do
+            v50 = v50 + (p49:sub(v51, v51) == '1' and 2 ^ (6 - v51) or 0)
+        end
+
+        return b:sub(v50 + 1, v50 + 1)
+    end) .. ({
+        '',
+        '==',
+        '=',
+    })[#p44 % 3 + 1]
+end
+function decode(p52)
+    return string.gsub(p52, '[^' .. b .. '=]', ''):gsub('.', function(p53)
+        if p53 == '=' then
+            return ''
+        end
+
+        local v54 = b:find(p53) - 1
+        local v55 = ''
+
+        for v56 = 6, 1, -1 do
+            v55 = v55 .. (v54 % 2 ^ v56 - v54 % 2 ^ (v56 - 1) > 0 and '1' or '0')
+        end
+
+        return v55
+    end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(p57)
+        if #p57 ~= 8 then
+            return ''
+        end
+
+        local v58 = 0
+
+        for v59 = 1, 8 do
+            v58 = v58 + (p57:sub(v59, v59) == '1' and 2 ^ (8 - v59) or 0)
+        end
+
+        return string.char(v58)
+    end)
+end
+function Hwid()
+    Send = request
+    u43 = Send({
+        Url = 'https://serahub.site/api',
+        Method = 'GET',
+    })
+    Body = split(decode(u43.Body), '.')
+
+    return Body[1]
+end
+function Otime()
+    Send = request
+    u43 = Send({
+        Url = 'https://serahub.site/api',
+        Method = 'GET',
+    })
+    Body = split(decode(u43.Body), '.')
+
+    return Body[2]
+end
+function checkKLumos45(p60)
+    local v61 = 'SeraHub/key.txt'
+
+    if isfile(v61) then
+        p60 = readfile(v61) or p60
+    end
+
+    local v62 = Hwid()
+
+    Send = request
+    u43 = Send({
+        Url = 'https://serahub.site/auth?k=' .. p60 .. '&t=' .. v62,
+        Method = 'GET',
+    })
+    Bo = split(decode(u43.Body), '.')
+
+    if u43.StatusCode ~= 200 or (Bo[1] ~= p60 or tonumber(Otime()) - tonumber(Bo[2]) > 10) then
+        if isfile(v61) then
+            delfile('SeraHub/key.txt')
+        end
+
+        Neww('SeraHub: Key is invalid', 2)
+    else
+        writefile(v61, p60)
+        _ScreenGui2:Destroy()
+        print(1)
+        Neww('SeraHub: Key is valid', 2)
+        print(2)
+
+        if getgenv().config ~= nil then
+            if not getgenv().config['White Screen'] then
+                getgenv().config['White Screen'] = false
+            end
+            if not getgenv().config.BypassTp then
+                getgenv().config.BypassTp = false
+            end
+
+            _G.Save = {
+                ['Bounty Earned'] = 0,
+                ['Time Elapsed'] = 0,
+            }
+            lp = game.Players.LocalPlayer
+            getgenv().weapon = nil
+            getgenv().hop = 1
+            getgenv().shop = false
+            getgenv().targ = nil
+            getgenv().start = nil
+            getgenv().checked = {}
+            getgenv().n = nil
+            _G.Health = nil
+
+            function LoadSettings()
+                if readfile and (writefile and (isfile and isfolder)) then
+                    if not isfolder('SeraHub') then
+                        makefolder('SeraHub')
+                    end
+                    if not isfolder('SeraHub/Auto Bounty/') then
+                        makefolder('SeraHub/Auto Bounty/')
+                    end
+                    if isfile('SeraHub/Auto Bounty/' .. game.Players.LocalPlayer.Name .. '.json') then
+                        local v63 = game:GetService('HttpService'):JSONDecode(readfile('SeraHub/Auto Bounty/' .. game.Players.LocalPlayer.Name .. '.json'))
+                        local v64, v65, v66 = pairs(v63)
+
+                        while true do
+                            local v67
+
+                            v66, v67 = v64(v65, v66)
+
+                            if v66 == nil then
+                                break
+                            end
+
+                            _G.Save[v66] = v67
+                        end
+                    else
+                        writefile('SeraHub/Auto Bounty/' .. game.Players.LocalPlayer.Name .. '.json', game:GetService('HttpService'):JSONEncode(_G.Save))
+                    end
+                else
+                    local _ = warn
+                end
+            end
+            function SaveSettings()
+                if readfile and (writefile and (isfile and isfolder)) then
+                    if isfile('SeraHub/Auto Bounty/' .. game.Players.LocalPlayer.Name .. '.json') then
+                        game:GetService('HttpService'):JSONDecode(readfile('SeraHub/Auto Bounty/' .. game.Players.LocalPlayer.Name .. '.json'))
+
+                        local v68, v69, v70 = pairs(_G.Save)
+                        local v71 = {}
+
+                        while true do
+                            local v72
+
+                            v70, v72 = v68(v69, v70)
+
+                            if v70 == nil then
+                                break
+                            end
+
+                            v71[v70] = v72
+                        end
+
+                        writefile('SeraHub/Auto Bounty/' .. game.Players.LocalPlayer.Name .. '.json', game:GetService('HttpService'):JSONEncode(v71))
+                    else
+                        LoadSettings()
+                    end
+                else
+                    local _ = warn
+                end
+            end
+
+            LoadSettings()
+
+            if getgenv().config['White Screen'] then
+                game:GetService('RunService'):Set3dRenderingEnabled(false)
+                setfpscap(30)
+            end
+
+            u5 = require(game.ReplicatedStorage:WaitForChild('Notification'))
+
+            u5.new('Welcome! <Color=Green>' .. game.Players.LocalPlayer.DisplayName .. '<Color=/>'):Display()
+            u5.new('Thanks for use SeraHub - Auto Bounty'):Display()
+
+            game:GetService('Workspace').Map['WaterBase-Plane'].Size = Vector3.new(1000, 112, 1000)
+
+            task.spawn(function()
+                game:GetService('ReplicatedStorage').Remotes.CommF_:InvokeServer('SetTeam', getgenv().config.Team)
+
+                local v73 = {
+                    'RaceEnergy',
+                    'Compass',
+                    'Energy',
+                    'AlliesButton',
+                    'Code',
+                    'CrewButton',
+                    'HomeButton',
+                    'Mute',
+                    'Settings',
+                    'MenuButton',
+                    'Beli',
+                    'Fragments',
+                    'Level',
+                    'HP',
+                }
+
+                if game:GetService('Players').LocalPlayer.PlayerGui.Main:FindFirstChild('ChooseTeam') then
+                    game:GetService('Players').LocalPlayer.PlayerGui.Main:FindFirstChild('ChooseTeam'):Destroy()
+                end
+
+                local v74, v75, v76 = pairs(v73)
+
+                while true do
+                    local v77
+
+                    v76, v77 = v74(v75, v76)
+
+                    if v76 == nil then
+                        break
+                    end
+                    if v77 == 'RaceEnergy' then
+                        if game:GetService('Players').LocalPlayer.Backpack:FindFirstChild('Awakening') or game:GetService('Players').LocalPlayer.Character:FindFirstChild('Awakening') then
+                            game:GetService('Players').LocalPlayer.PlayerGui.Main[v77].Visible = true
+                        end
+                    else
+                        game:GetService('Players').LocalPlayer.PlayerGui.Main[v77].Visible = true
+                    end
+                end
+
+                game:GetService('Workspace').CurrentCamera.CameraType = Enum.CameraType.Custom
+                game:GetService('Workspace').CurrentCamera.CameraSubject = game:GetService('Players').LocalPlayer.Character.Humanoid
+                game:GetService('Workspace').CurrentCamera.CFrame = game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame
+            end)
+
+            repeat
+                wait()
+            until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
+
+            wait(2)
+
+            Instance.new('Part', game:GetService('Players').LocalPlayer.Character.HumanoidRootPart).Name = 'Agility'
+
+            if game:GetService('Workspace').Map:FindFirstChild('Waterfall') then
+                if game:GetService('Workspace').Map.Waterfall.MapTeleportA:FindFirstChild('Hitbox') then
+                    game:GetService('Workspace').Map.Waterfall.MapTeleportA.Hitbox:Destroy()
+                end
+                if game:GetService('Workspace').Map['Boat Castle'].MapTeleportB:FindFirstChild('Hitbox') then
+                    game:GetService('Workspace').Map['Boat Castle'].MapTeleportB.Hitbox:Destroy()
+                end
+                if game:GetService('Workspace').Map['Boat Castle'].MapTeleportA:FindFirstChild('Hitbox') then
+                    game:GetService('Workspace').Map['Boat Castle'].MapTeleportA.Hitbox:Destroy()
+                end
+                if game:GetService('Workspace').Map.Turtle.MapTeleportB:FindFirstChild('Hitbox') then
+                    game:GetService('Workspace').Map.Turtle.MapTeleportB.Hitbox:Destroy()
+                end
+            end
+
+            function tpto(p78)
+                local _PlaceId = game.PlaceId
+
+                if _PlaceId == 2753915549 then
+                    u41 = {
+                        Vector3.new(-7894.6201171875, 5545.49169921875, -380.246346191406),
+                        Vector3.new(-4607.82275390625, 872.5422973632813, -1667.556884765625),
+                        Vector3.new(61163.8515625, 11.759522438049316, 1819.7841796875),
+                        Vector3.new(3876.280517578125, 35.10614013671875, -1939.3201904296875),
+                    }
+                elseif _PlaceId == 4442272183 then
+                    u41 = {
+                        Vector3.new(-288.46246337890625, 306.130615234375, 597.9988403320313),
+                        Vector3.new(2284.912109375, 15.152046203613281, 905.48291015625),
+                        Vector3.new(923.21252441406, 126.9760055542, 32852.83203125),
+                        Vector3.new(-6508.5581054688, 89.034996032715, -132.83953857422),
+                    }
+                elseif _PlaceId == 7449423635 then
+                    u41 = {
+                        Vector3.new(-5058.77490234519, 314.5155029297924, -3155.88330079218),
+                        Vector3.new(5756.83740234375, 610.4240112304688, -253.9253692627321),
+                        Vector3.new(-12463.8740234375, 374.9144592287017, -7523.77392579431),
+                        Vector3.new(28282.5704095, 14896.8505859375, 105.1042709351036),
+                        Vector3.new(-11993.580079045, 334.7812805176547, -8844.1826173214),
+                        Vector3.new(5314.58204105, 25.419387817383523, -125.94227600143542),
+                    }
+                end
+
+                local _Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                local _huge = math.huge
+                local v82, v83, v84 = pairs(u41)
+                local v85 = false
+
+                while true do
+                    local v86
+
+                    v84, v86 = v82(v83, v84)
+
+                    if v84 == nil then
+                        break
+                    end
+
+                    local _Magnitude = (p78 - v86).Magnitude
+
+                    if _Magnitude < _huge then
+                        v85 = v86
+                        _huge = _Magnitude
+                    end
+                end
+
+                if v85 and _huge < (_Position - p78).Magnitude then
+                    return v85
+                else
+                    return false
+                end
+            end
+            function is(p88)
+                local _Position2 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                local _huge2 = math.huge
+                local v91 = nil
+
+                u42 = nil
+
+                local v92, v93, v94 = pairs(game.Workspace._WorldOrigin.PlayerSpawns:FindFirstChild(tostring(game.Players.LocalPlayer.Team)):GetChildren())
+
+                while true do
+                    local v95
+
+                    v94, v95 = v92(v93, v94)
+
+                    if v94 == nil then
+                        break
+                    end
+
+                    local _Magnitude2 = (p88 - v95:GetModelCFrame().p).Magnitude
+
+                    if _Magnitude2 < _huge2 then
+                        v91 = v95:GetModelCFrame().p
+                        u42 = v95.Name
+                        _huge2 = _Magnitude2
+                    end
+                end
+
+                local _ = getgenv().targ.Character.HumanoidRootPart.Position
+
+                if v91 and _huge2 < (_Position2 - p88).Magnitude then
+                    if (getgenv().targ.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude >= 3000 then
+                        if u42 == 'SeaCastle' or (u42 == 'Hydra1' or (u42 == 'Hydra2' or (u42 == 'Hydra3' or u42 == 'BigMansion'))) then
+                            return nil
+                        else
+                            return v91
+                        end
+                    else
+                        return nil
+                    end
+                else
+                    return nil
+                end
+            end
+
+            _G.Call = false
+
+            function BPT(p97)
+                pcall(function()
+                    poss = is(p97)
+
+                    if _G.Call == false and poss then
+                        _G.Call = true
+
+                        for _ = 1, 4 do
+                            game.Players.LocalPlayer.Character:BreakJoints()
+
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.Position = poss
+                        end
+
+                        game:GetService('Players').LocalPlayer.CharacterAdded:Wait()
+                        wait(1)
+
+                        _G.Call = false
+                    end
+                end)
+            end
+            function to(p98)
+                pcall(function()
+                    if game.Players.LocalPlayer.Character:FindFirstChild('Humanoid') and game.Players.LocalPlayer.Character:FindFirstChild('Humanoid').Health > 0 then
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X, p98.Y, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+                        Distance = (p98.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+
+                        if Distance < 250 then
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = p98
+                        end
+                        if game.Players.LocalPlayer.Character.Humanoid.Sit == true then
+                            game.Players.LocalPlayer.Character.Humanoid.Sit = false
+                        end
+                        if not game.Players.LocalPlayer.Character.PrimaryPart:FindFirstChild('Hold') then
+                            local _BodyVelocity = Instance.new('BodyVelocity', game.Players.LocalPlayer.Character.PrimaryPart)
+
+                            _BodyVelocity.Name = 'Hold'
+                            _BodyVelocity.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+                            _BodyVelocity.Velocity = Vector3.new(0, 0, 0)
+                        end
+
+                        local v100 = tpto(p98.Position)
+
+                        if v100 ~= false and (getgenv().shop == false and p98.Y < 10000) then
+                            _G.Cancel = true
+
+                            game:GetService('ReplicatedStorage').Remotes.CommF_:InvokeServer('requestEntrance', v100)
+                            wait(1)
+                        end
+                        if getgenv().config.BypassTp and (getgenv().shop == false and (p98.Y < 10000 and (p98.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3500)) and (game:GetService('Players').LocalPlayer.PlayerGui.Main.InCombat.Visible == false or game:GetService('Players').LocalPlayer.PlayerGui.Main.InCombat.Text == '\u{2694}\u{fe0f}In Combat\u{2694}\u{fe0f}') then
+                            BPT(p98.Position)
+                        end
+
+                        Speed = 350
+
+                        local v101 = {CFrame = p98}
+
+                        tween = game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Distance / Speed, Enum.EasingStyle.Linear), v101)
+
+                        if _G.Call == false then
+                            tween:Play()
+                        end
+                        if _G.Cancel == true then
+                            tween:Cancel()
+
+                            _G.Cancel = false
+                        end
+                    end
+                end)
+            end
+            function hasValue(p102, p103)
+                local v104, v105, v106 = pairs(p102)
+
+                while true do
+                    local v107
+
+                    v106, v107 = v104(v105, v106)
+
+                    if v106 == nil then
+                        break
+                    end
+                    if v107 == p103 then
+                        return true
+                    end
+                end
+
+                return false
+            end
+            function target()
+                if not arecall then
+                    _G.Health = nil
+                    getgenv().n = nil
+
+                    game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+
+                    arecall = true
+                    u43 = 30000
+                    p = nil
+                    getgenv().targ = nil
+
+                    local v108, v109, v110 = pairs(game.Players:GetPlayers())
+
+                    while true do
+                        local u111
+
+                        v110, u111 = v108(v109, v110)
+
+                        if v110 == nil then
+                            break
+                        end
+
+                        pcall(function()
+                            if (not game:GetService('Workspace')._WorldOrigin.Locations:FindFirstChild('Island 1') or u111:DistanceFromCharacter(game:GetService('Workspace')._WorldOrigin.Locations:FindFirstChild('Island 1').Position) >= 5000) and (not (u111.Character:FindFirstChild('RaceTransformed') and getgenv().config['Skip Race V4 User']) and ((lp.Team ~= u111.Team or getgenv().config.Team == 'Pirates') and (not hasValue(getgenv().config.SkipFruit, u111.Data.DevilFruit.Value) and (u111.Character.Humanoid.Sit == false and (u111 ~= lp and u111 ~= getgenv().targ)))) and (lp.Character:FindFirstChild('Head') and ((u111.Character:FindFirstChild('HumanoidRootPart').CFrame.Position - game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame.Position).Magnitude < u43 and (hasValue(getgenv().checked, u111) == false and ((Vector3.new(5230.08, 68.1503, -1451.42) - u111.Character.HumanoidRootPart.Position).Magnitude > 30 and (tonumber(game.Players.LocalPlayer.Data.Level.Value) - 500 < u111.Data.Level.Value and (u111.Character and (u111.leaderstats['Bounty/Honor'].Value >= getgenv().config.MinBountyHunt and u111.leaderstats['Bounty/Honor'].Value <= getgenv().config.MaxBountyHunt)))))))) then
+                                p = u111
+                                u43 = (u111.Character.HumanoidRootPart.CFrame.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Position).Magnitude
+                            end
+                        end)
+                    end
+
+                    if p == nil then
+                        starthop()
+                    end
+                    if p.Character:FindFirstChild('Humanoid') then
+                        _G.Health = p.Character.Humanoid.Health
+                    end
+
+                    getgenv().targ = p
+                    getgenv().start = os.time()
+                    arecall = false
+                end
+            end
+            function nWPa()
+                game.Players.LocalPlayer:Kick('SeraHub: Protect Gui')
+                wait(5)
+
+                while true do end
+            end
+            function wSend(p112)
+                task.spawn(function()
+                    local v113 = game:GetService('HttpService'):JSONEncode(p112)
+                    local v114 = {
+                        ['content-type'] = 'application/json',
+                    }
+
+                    Send = http_request or request or (HttpPost or syn.request)
+
+                    if getgenv().config.Webhooks['Toggle Webhook'] and getgenv().config.Webhooks['Link Webhook'] ~= '' then
+                        Send({
+                            Url = getgenv().config.Webhooks['Link Webhook'],
+                            Body = v113,
+                            Method = 'POST',
+                            Headers = v114,
+                        })
+                    end
+                end)
+            end
+            function wHop()
+                local v115 = {
+                    content = '',
+                }
+                local v116 = {}
+                local v117 = {
+                    author = {
+                        name = game.Players.LocalPlayer.Name,
+                        icon_url = 'https://static.wikia.nocookie.net/2840931c-afb4-482b-a364-18b968adac58',
+                    },
+                    color = 16228095,
+                    title = 'Sera Hub - Auto Bounty',
+                    description = 'Joining new server...',
+                    thumbnail = {
+                        url = 'https://cdn.discordapp.com/attachments/937563909236326400/1124332695581888522/Untitled23_20230628115032.png',
+                    },
+                    image = {
+                        url = 'https://cdn.discordapp.com/attachments/1127179277935316994/1130136051604799488/image.png',
+                    },
+                    footer = {
+                        text = 'Sera Hub - https://bit.ly/serahub',
+                    },
+                    timestamp = os.date('!%Y-%m-%dT%H:%M:%SZ'),
+                }
+
+                __set_list(v116, 1, {v117})
+
+                v115.embeds = v116
+
+                wSend(v115)
+            end
+            function wRecv()
+                local v118 = {
+                    content = '',
+                }
+                local v119 = {}
+                local v120 = {
+                    title = 'Sera Hub - Auto Bounty',
+                    color = 16228095,
+                    author = {
+                        name = game.Players.LocalPlayer.Name,
+                        icon_url = 'https://static.wikia.nocookie.net/2840931c-afb4-482b-a364-18b968adac58',
+                    },
+                    fields = {
+                        {
+                            name = 'Player:',
+                            value = '||' .. lp.Name .. '||',
+                            inline = false,
+                        },
+                        {
+                            name = 'Server Id:',
+                            value = game.JobId,
+                            inline = false,
+                        },
+                    },
+                    footer = {
+                        text = 'Sera Hub - https://bit.ly/serahub',
+                    },
+                    image = {
+                        url = 'https://cdn.discordapp.com/attachments/1127179277935316994/1130136051604799488/image.png',
+                    },
+                    thumbnail = {
+                        url = 'https://cdn.discordapp.com/attachments/937563909236326400/1124332695581888522/Untitled23_20230628115032.png',
+                    },
+                    timestamp = os.date('!%Y-%m-%dT%H:%M:%SZ'),
+                }
+
+                __set_list(v119, 1, {v120})
+
+                v118.embeds = v119
+
+                wSend(v118)
+            end
+
+            wRecv()
+
+            function format(p121)
+                local _, _, v122, v123, v124 = tostring(p121):find('([-]?)(%d+)([.]?%d*)')
+
+                return v122 .. v123:reverse():gsub('(%d%d%d)', '%1,'):reverse():gsub('^,', '') .. v124
+            end
+            function wEarn(p125, p126)
+                local v127 = {
+                    content = '',
+                }
+                local v128 = {}
+                local v129 = {
+                    author = {
+                        name = game.Players.LocalPlayer.Name,
+                        icon_url = 'https://static.wikia.nocookie.net/2840931c-afb4-482b-a364-18b968adac58',
+                    },
+                    title = 'Sera Hub - Auto Bounty',
+                    color = 16228095,
+                    fields = {
+                        {
+                            name = 'Player:',
+                            value = '||' .. game.Players.LocalPlayer.Name .. '||',
+                            inline = false,
+                        },
+                        {
+                            name = 'Target:',
+                            value = p125,
+                            inline = false,
+                        },
+                        {
+                            name = 'Bounty Earned:',
+                            value = format(p126) .. ' Bounty',
+                            inline = false,
+                        },
+                        {
+                            name = 'Current Bounty:',
+                            value = format(lp.leaderstats['Bounty/Honor'].Value),
+                            inline = false,
+                        },
+                    },
+                    thumbnail = {
+                        url = 'https://cdn.discordapp.com/attachments/937563909236326400/1124332695581888522/Untitled23_20230628115032.png',
+                    },
+                    image = {
+                        url = 'https://cdn.discordapp.com/attachments/1127179277935316994/1130136051604799488/image.png',
+                    },
+                    footer = {
+                        text = 'Sera Hub - https://bit.ly/serahub',
+                    },
+                    timestamp = os.date('!%Y-%m-%dT%H:%M:%SZ'),
+                }
+
+                __set_list(v128, 1, {v129})
+
+                v127.embeds = v128
+
+                wSend(v127)
+            end
+            function starthop()
+                if getgenv().targ ~= nil or (getgenv().shop ~= false or getgenv().hop ~= 1) then
+                    return
+                else
+                    repeat
+                        wait()
+                    until lp.Character:FindFirstChild('Humanoid') and lp.Character.Humanoid.Health > 0
+
+                    local _Part = Instance.new('Part')
+
+                    _Part.Position = lp.Character.HumanoidRootPart.Position
+                    _Part.CanCollide = true
+                    _Part.Transparency = 1
+                    _Part.Anchored = true
+                    _Part.Name = 'Chest11'
+                    _Part.Parent = game:GetService('Workspace')
+                    _Part.Size = Vector3.new(2, 2.02, 1)
+
+                    wHop()
+
+                    getgenv().shop = true
+                    getgenv().hop = getgenv().hop + 1
+
+                    while true do
+                        if true then
+                            wait(1)
+
+                            if game.Workspace:FindFirstChild('Chest11') then
+                                local _Chest11 = game.Workspace:FindFirstChild('Chest11')
+
+                                to(_Chest11.CFrame * CFrame.new(0, 1000000000, 0))
+                            else
+                                local _Part2 = Instance.new('Part')
+
+                                _Part2.Position = lp.Character.HumanoidRootPart.Position
+                                _Part2.CanCollide = true
+                                _Part2.Anchored = true
+                                _Part2.Transparency = 1
+                                _Part2.Name = 'Chest11'
+                                _Part2.Parent = game:GetService('Workspace')
+                                _Part2.Size = Vector3.new(2, 2.02, 1)
+                            end
+                        end
+                        if game:GetService('Players').LocalPlayer.PlayerGui.Main.InCombat.Visible == false or game:GetService('Players').LocalPlayer.PlayerGui.Main.InCombat.Text == '\u{2694}\u{fe0f}In Combat\u{2694}\u{fe0f}' then
+                            local _Chest112 = game.Workspace:FindFirstChild('Chest11')
+
+                            to(_Chest112.CFrame * CFrame.new(0, 1000000000, 0))
+                            Hop()
+                            wait(2)
+                            to(_Chest112.CFrame * CFrame.new(0, 1000000000, 0))
+                        end
+                    end
+                end
+            end
+            function buso()
+                if not game.Players.LocalPlayer.Character:FindFirstChild('HasBuso') then
+                    game.ReplicatedStorage.Remotes.CommF_:InvokeServer('Buso')
+                end
+            end
+            function b()
+                local _ = game.PlaceId
+                local u134 = {}
+
+                function GetServerIDs()
+                    local v135 = os.time() + os.clock() + math.random()
+
+                    math.randomseed(v135)
+
+                    coun = math.random(1, 25)
+
+                    local v136 = game:GetService('ReplicatedStorage').__ServerBrowser:InvokeServer(coun)
+                    local v137, v138, v139 = pairs(v136)
+                    local v140 = {}
+
+                    while true do
+                        local v141
+
+                        v139, v141 = v137(v138, v139)
+
+                        if v139 == nil then
+                            break
+                        end
+                        if v141.Count < 10 then
+                            table.insert(v140, v139)
+                        end
+                    end
+
+                    if #v140 <= 0 then
+                        GetServerIDs()
+                    else
+                        local v142 = os.time() + os.clock() + math.random()
+
+                        math.randomseed(v142)
+
+                        local v143 = v140[math.random(1, #v140)]
+
+                        u134[v143] = v136[v143].Count
+                    end
+                end
+                function Teleport()
+                    local v144, v145, v146 = pairs(u134)
+
+                    while true do
+                        local v147
+
+                        v146, v147 = v144(v145, v146)
+
+                        if v146 == nil then
+                            break
+                        end
+                        if v147 < 12 then
+                            local v148 = os.time() + os.clock() + math.random()
+
+                            math.randomseed(v148)
+
+                            if math.random(1, 2) == 1 then
+                                game:GetService('ReplicatedStorage').__ServerBrowser:InvokeServer('teleport', v146)
+                            end
+
+                            break
+                        end
+                    end
+                end
+
+                while true do
+                    local _Chest113 = game.Workspace:FindFirstChild('Chest11')
+
+                    to(_Chest113.CFrame * CFrame.new(0, 1000000000, 0))
+
+                    u134 = {}
+
+                    GetServerIDs()
+                    Teleport()
+                    wait(2)
+                end
+            end
+
+            spawn(function()
+                Player = game.Players.LocalPlayer
+                Http = game:GetService('HttpService')
+                TPS = game:GetService('TeleportService')
+                Api = 'https://games.roblox.com/v1/games/'
+
+                local _PlaceId2 = game.PlaceId
+
+                _id = game.JobId
+                _place = _PlaceId2
+                _servers = Api .. _place .. '/servers/Public?sortOrder=Desc&limit=100'
+
+                function ListServers(p151)
+                    Raw = game:HttpGet(_servers .. (p151 and '&cursor=' .. p151 or ''))
+
+                    return Http:JSONDecode(Raw)
+                end
+
+                local v152 = nil
+
+                Servers = ListServers(v152)
+
+                local v153 = next
+                local _data = Servers.data
+                local v155 = nil
+
+                while true do
+                    local v156
+
+                    v155, v156 = v153(_data, v155)
+
+                    if v155 == nil then
+                        break
+                    end
+                    if v156.playing < v156.maxPlayers and v156.id ~= _id then
+                        _G.id = v156.id
+
+                        if s then
+                        end
+                    end
+                end
+
+                v152 = Servers.nextPageCursor
+
+                if not v152 then
+                    return
+                end
+            end)
+
+            function Hop()
+                while true do
+                    local _Chest114 = game.Workspace:FindFirstChild('Chest11')
+
+                    to(_Chest114.CFrame * CFrame.new(0, 1000000000, 0))
+                    pcall(TPS.TeleportToPlaceInstance, TPS, _place, _G.id, Player)
+                    wait(2)
+                    b()
+                    wait(2)
+                end
+            end
+
+            game.CoreGui.RobloxPromptGui.promptOverlay.DescendantAdded:Connect(function()
+                local _ErrorPrompt = game.CoreGui.RobloxPromptGui.promptOverlay:FindFirstChild('ErrorPrompt')
+
+                if _ErrorPrompt and string.find(string.lower(_ErrorPrompt.TitleFrame.ErrorTitle.Text), 'disconnect') then
+                    Hop()
+                end
+            end)
+
+            function down(p159)
+                game:GetService('VirtualInputManager'):SendKeyEvent(true, p159, false, game.Players.LocalPlayer.Character.HumanoidRootPart)
+
+                if getgenv().weapon == nil then
+                    task.wait(0.1)
+                else
+                    task.wait(0.1 + getgenv().config.MainSkillToggle[getgenv().weapon].Skills[p159].HoldTime)
+                end
+
+                game:GetService('VirtualInputManager'):SendKeyEvent(false, p159, false, game.Players.LocalPlayer.Character.HumanoidRootPart)
+            end
+
+            _G.C = false
+
+            function skipTarget()
+                if _G.C == false then
+                    _G.C = true
+
+                    table.insert(getgenv().checked, getgenv().targ)
+
+                    getgenv().targ = nil
+
+                    target()
+
+                    _G.C = false
+                end
+            end
+            function equip(p160)
+                local _LocalPlayer = game.Players.LocalPlayer
+                local v162 = _LocalPlayer.Character or _LocalPlayer.CharacterAdded:Wait()
+                local v163, v164, v165 = pairs(_LocalPlayer.Backpack:GetChildren())
+
+                while true do
+                    local v166
+
+                    v165, v166 = v163(v164, v165)
+
+                    if v165 == nil then
+                        break
+                    end
+                    if v166:IsA('Tool') and v166.ToolTip == p160 then
+                        local _Humanoid = v162:FindFirstChildOfClass('Humanoid')
+
+                        if _Humanoid and not _Humanoid:IsDescendantOf(v166) then
+                            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v166)
+
+                            return v166
+                        end
+                    end
+                end
+
+                return false
+            end
+
+            task.spawn(function()
+                while wait() and getgenv().shop == false do
+                    pcall(function()
+                        if game:GetService('Players').LocalPlayer.Character:FindFirstChild('Head') and (getgenv().targ.Character.HumanoidRootPart.CFrame.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Position).Magnitude < 50 then
+                            game:GetService('ReplicatedStorage').Remotes.CommE:FireServer('Ken', true)
+                        end
+                        if game:GetService('Players').LocalPlayer.PlayerGui.Main.PvpDisabled.Visible == true then
+                            game:GetService('ReplicatedStorage').Remotes.CommF_:InvokeServer('EnablePvp')
+                        end
+                        if lp.Character:FindFirstChild('Head') and (getgenv().targ.Character.HumanoidRootPart.CFrame.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Position).Magnitude < 150 then
+                            buso()
+
+                            if lp.Character.Humanoid.Health <= 9000 then
+                                if getgenv().config['Use Race'].V3 then
+                                    game:GetService('VirtualInputManager'):SendKeyEvent(true, 'T', false, game.Players.LocalPlayer.Character.HumanoidRootPart)
+                                    game:GetService('VirtualInputManager'):SendKeyEvent(false, 'T', false, game.Players.LocalPlayer.Character.HumanoidRootPart)
+                                end
+                                if getgenv().config['Use Race'].V4 then
+                                    game:GetService('VirtualInputManager'):SendKeyEvent(true, 'Y', false, game.Players.LocalPlayer.Character.HumanoidRootPart)
+                                    game:GetService('VirtualInputManager'):SendKeyEvent(false, 'Y', false, game.Players.LocalPlayer.Character.HumanoidRootPart)
+                                end
+                            end
+                        end
+                    end)
+                end
+            end)
+
+            function checkcd(p168, p169)
+                local _LocalPlayer2 = game.Players.LocalPlayer
+                local v171 = _LocalPlayer2.Character or _LocalPlayer2.CharacterAdded:Wait()
+                local _Humanoid2 = v171:FindFirstChildOfClass('Humanoid')
+
+                if not _Humanoid2 then
+                    return true
+                end
+
+                local _Skills = _LocalPlayer2.PlayerGui.Main.Skills
+                local v174, v175, v176 = ipairs(v171:GetChildren())
+
+                while true do
+                    local v177
+
+                    v176, v177 = v174(v175, v176)
+
+                    if v176 == nil then
+                        break
+                    end
+                    if v177:IsA('Tool') and (v177.ToolTip == p168 and not _Humanoid2:IsDescendantOf(v177)) then
+                        local v178 = _Skills:FindFirstChild(v177.Name)
+
+                        if v178 then
+                            local _X = v178[p169].Cooldown.Size.X
+                            local _TextColor3 = v178[p169].Title.TextColor3
+
+                            if _X.Scale == 0 and _TextColor3 == Color3.new(1, 1, 1) then
+                                return false
+                            end
+                        end
+                    end
+                end
+
+                return true
+            end
+
+            task.spawn(function()
+                while task.wait(0.5) and not getgenv().shop do
+                    if not (getgenv().targ and getgenv().targ.Character) then
+                        target()
+                    end
+
+                    pcall(function()
+                        local _Character = getgenv().targ.Character
+                        local _Character2 = game.Players.LocalPlayer.Character
+
+                        if _Character:FindFirstChild('HumanoidRootPart') and (_Character2:FindFirstChild('HumanoidRootPart') and (_Character.HumanoidRootPart.Position - _Character2.HumanoidRootPart.Position).Magnitude < 90) then
+                            task.spawn(function()
+                                local _weapon = getgenv().weapon
+
+                                if _weapon then
+                                    local _Skills2 = getgenv().config.MainSkillToggle[_weapon].Skills
+                                    local v185, v186, v187 = pairs(_Skills2)
+
+                                    while true do
+                                        local v188
+
+                                        v187, v188 = v185(v186, v187)
+
+                                        if v187 == nil then
+                                            break
+                                        end
+                                        if v188.Enable then
+                                            if _weapon ~= getgenv().weapon then
+                                                break
+                                            end
+                                            if checkcd(_weapon, v187) == false then
+                                                down(v187)
+                                                wait(1)
+                                            end
+                                        end
+                                    end
+                                end
+                            end)
+                        end
+                    end)
+                end
+            end)
+            task.spawn(function()
+                while wait() and getgenv().shop == false do
+                    if getgenv().targ == nil or not (getgenv().targ and getgenv().targ.Character) then
+                        target()
+                    end
+                    if getgenv().targ == nil then
+                        starthop()
+                    end
+                    if game.Players.LocalPlayer and (game.Players.LocalPlayer.Character:FindFirstChild('Humanoid') and game.Players.LocalPlayer.Character.Humanoid.Sit == true) then
+                        game.Players.LocalPlayer.Character.Humanoid.Sit = false
+                    end
+
+                    pcall(function()
+                        if getgenv().targ.Character:FindFirstChild('HumanoidRootPart') and (game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart') and (getgenv().targ.Character:WaitForChild('HumanoidRootPart').CFrame.Position - game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame.Position).Magnitude < 90) then
+                            random()
+                            equip(getgenv().weapon)
+                            task.wait(getgenv().config.MainSkillToggle[getgenv().weapon].Delay)
+                        end
+                    end)
+                end
+            end)
+
+            function random()
+                task.spawn(function()
+                    getgenv().weapon = nil
+
+                    local _MainSkillToggle = getgenv().config.MainSkillToggle
+                    local v190 = {}
+
+                    if _MainSkillToggle.Melee.Enable then
+                        table.insert(v190, 'Melee')
+                    end
+                    if _MainSkillToggle['Blox Fruit'].Enable then
+                        table.insert(v190, 'Blox Fruit')
+                    end
+                    if _MainSkillToggle.Gun.Enable then
+                        table.insert(v190, 'Gun')
+                    end
+                    if _MainSkillToggle.Sword.Enable then
+                        table.insert(v190, 'Sword')
+                    end
+
+                    local v191, v192, v193 = pairs(game.Players.LocalPlayer.Backpack:GetChildren())
+
+                    while true do
+                        local v194
+
+                        v193, v194 = v191(v192, v193)
+
+                        if v193 == nil then
+                            break
+                        end
+                        if hasValue(v190, v194.ToolTip) then
+                            getgenv().weapon = v194.ToolTip
+
+                            break
+                        end
+                    end
+                end)
+            end
+
+            task.spawn(function()
+                while wait() and getgenv().shop == false do
+                    if game:GetService('Workspace')._WorldOrigin.SafeZones:FindFirstChild('Temple') and getgenv().targ ~= nil and (getgenv().targ.Character:FindFirstChild('HumanoidRootPart') and (game:GetService('Workspace')._WorldOrigin.SafeZones.Temple.Position - getgenv().targ.Character:WaitForChild('HumanoidRootPart').CFrame.Position).Magnitude < 3000) then
+                        skipTarget()
+                    end
+                end
+            end)
+            task.spawn(function()
+                while wait(1) and getgenv().shop == false do
+                    if getgenv().start ~= nil and getgenv().targ ~= nil then
+                        if getgenv().n ~= nil and (_G.Health ~= nil and os.time() - getgenv().n >= 7) and (getgenv().targ.Character:FindFirstChild('Humanoid') and getgenv().targ.Character.Humanoid.Health > _G.Health) then
+                            skipTarget()
+
+                            getgenv().n = nil
+                        end
+                        if os.time() - getgenv().start >= 100 then
+                            skipTarget()
+                        end
+                    end
+                end
+            end)
+            game.ReplicatedStorage:WaitForChild('Remotes'):WaitForChild('CommE').OnClientEvent:Connect(function(p195, ...)
+                if p195 == 'Notify' then
+                    local v196 = {...}
+
+                    if v196[1]:find('Honor<Color=/> from') or v196[1]:find('Bounty<Color=/> from') then
+                        wEarn(string.match(v196[1], 'killing%s+(%S+)'), tonumber(string.match(v196[1], '>(%d+)')))
+
+                        _G.Save['Bounty Earned'] = _G.Save['Bounty Earned'] + tonumber(string.match(v196[1], '>(%d+)'))
+
+                        SaveSettings()
+                    elseif v196[1]:find('<Color=Red>Player died') then
+                        skipTarget()
+                        wait(1)
+                    elseif v196[1]:find('for dying in PvP') then
+                        skipTarget()
+                        wait(1)
+                    elseif v196[1]:find('players in a Safe') then
+                        skipTarget()
+                        wait(1)
+                    elseif v196[1]:find('<Color=Red>You lack the strength') then
+                        skipTarget()
+                        wait(1)
+                    end
+                end
+            end)
+
+            if getgenv().config['Info Screen'] then
+                function randomString(p197)
+                    local v198 = ''
+
+                    for _ = 1, p197 do
+                        v198 = v198 .. string.char(math.random(97, 122))
+                    end
+
+                    return v198
+                end
+
+                local _ScreenGui3 = Instance.new('ScreenGui')
+                local _Frame5 = Instance.new('Frame')
+                local _UIGradient4 = Instance.new('UIGradient')
+                local _TextLabel4 = Instance.new('TextLabel')
+                local _UIGradient5 = Instance.new('UIGradient')
+                local _UITextSizeConstraint = Instance.new('UITextSizeConstraint')
+                local _UIAspectRatioConstraint = Instance.new('UIAspectRatioConstraint')
+                local _TextLabel5 = Instance.new('TextLabel')
+                local _UITextSizeConstraint2 = Instance.new('UITextSizeConstraint')
+                local _UIAspectRatioConstraint2 = Instance.new('UIAspectRatioConstraint')
+                local _TextLabel6 = Instance.new('TextLabel')
+                local _UITextSizeConstraint3 = Instance.new('UITextSizeConstraint')
+                local _UIAspectRatioConstraint3 = Instance.new('UIAspectRatioConstraint')
+                local _TextLabel7 = Instance.new('TextLabel')
+                local _UITextSizeConstraint4 = Instance.new('UITextSizeConstraint')
+                local _UIAspectRatioConstraint4 = Instance.new('UIAspectRatioConstraint')
+                local _ImageLabel = Instance.new('ImageLabel')
+                local _UIAspectRatioConstraint5 = Instance.new('UIAspectRatioConstraint')
+                local _TextLabel8 = Instance.new('TextLabel')
+                local _UIGradient6 = Instance.new('UIGradient')
+                local _UITextSizeConstraint5 = Instance.new('UITextSizeConstraint')
+                local _UIAspectRatioConstraint6 = Instance.new('UIAspectRatioConstraint')
+                local _TextButton4 = Instance.new('TextButton')
+                local _UITextSizeConstraint6 = Instance.new('UITextSizeConstraint')
+                local _UIAspectRatioConstraint7 = Instance.new('UIAspectRatioConstraint')
+                local _TextButton5 = Instance.new('TextButton')
+                local _UITextSizeConstraint7 = Instance.new('UITextSizeConstraint')
+                local _UIAspectRatioConstraint8 = Instance.new('UIAspectRatioConstraint')
+                local _UICorner8 = Instance.new('UICorner')
+                local _UIAspectRatioConstraint9 = Instance.new('UIAspectRatioConstraint')
+                local _UIAspectRatioConstraint10 = Instance.new('UIAspectRatioConstraint')
+
+                _ScreenGui3.Parent = game.Players.LocalPlayer:WaitForChild('PlayerGui')
+                _ScreenGui3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+                _ScreenGui3.Name = randomString(30)
+                _Frame5.Parent = _ScreenGui3
+                _Frame5.Name = randomString(30)
+                _Frame5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                _Frame5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                _Frame5.BorderSizePixel = 0
+                _Frame5.Position = UDim2.new(0.349315077, 0, 0.308917195, 0)
+                _Frame5.Size = UDim2.new(0.301369876, 0, 0.382165611, 0)
+
+                local _UserInputService = game:GetService('UserInputService')
+                local u231 = _Frame5
+                local u232 = nil
+                local u233 = nil
+                local u234 = nil
+                local u235 = nil
+
+                local function u238(p236)
+                    local v237 = p236.Position - u234
+
+                    u231.Position = UDim2.new(u235.X.Scale, u235.X.Offset + v237.X, u235.Y.Scale, u235.Y.Offset + v237.Y)
+                end
+
+                u231.InputBegan:Connect(function(p239)
+                    if p239.UserInputType == Enum.UserInputType.MouseButton1 or p239.UserInputType == Enum.UserInputType.Touch then
+                        u232 = true
+                        u234 = p239.Position
+                        u235 = u231.Position
+
+                        p239.Changed:Connect(function()
+                            if p239.UserInputState == Enum.UserInputState.End then
+                                u232 = false
+                            end
+                        end)
+                    end
+                end)
+                u231.InputChanged:Connect(function(p240)
+                    if p240.UserInputType == Enum.UserInputType.MouseMovement or p240.UserInputType == Enum.UserInputType.Touch then
+                        u233 = p240
+                    end
+                end)
+                _UserInputService.InputChanged:Connect(function(p241)
+                    if p241 == u233 and u232 then
+                        u238(p241)
+                    end
+                end)
+
+                _UIGradient4.Color = ColorSequence.new({
+                    ColorSequenceKeypoint.new(0, Color3.fromRGB(40, 40, 40)),
+                    ColorSequenceKeypoint.new(1, Color3.fromRGB(62, 62, 62)),
+                })
+                _UIGradient4.Parent = _Frame5
+                _TextLabel4.Parent = _Frame5
+                _TextLabel4.Name = randomString(30)
+                _TextLabel4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                _TextLabel4.BackgroundTransparency = 1
+                _TextLabel4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                _TextLabel4.BorderSizePixel = 0
+                _TextLabel4.Position = UDim2.new(0.086363636, 0, 0.0333333351, 0)
+                _TextLabel4.Size = UDim2.new(0.900000036, 0, 0.129166663, 0)
+                _TextLabel4.Font = Enum.Font.FredokaOne
+                _TextLabel4.Text = 'Sera Hub - Auto Bounty'
+                _TextLabel4.TextColor3 = Color3.fromRGB(255, 255, 255)
+                _TextLabel4.TextScaled = true
+                _TextLabel4.TextSize = 14
+                _TextLabel4.TextWrapped = true
+                _UIGradient5.Color = ColorSequence.new({
+                    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 157, 20)),
+                    ColorSequenceKeypoint.new(1, Color3.fromRGB(208, 208, 208)),
+                })
+                _UIGradient5.Parent = _TextLabel4
+                _UITextSizeConstraint.Parent = _TextLabel4
+                _UITextSizeConstraint.MaxTextSize = 31
+                _UIAspectRatioConstraint.Parent = _TextLabel4
+                _UIAspectRatioConstraint.AspectRatio = 12.774
+                _TextLabel5.Parent = _Frame5
+                _TextLabel5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                _TextLabel5.BackgroundTransparency = 1
+                _TextLabel5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                _TextLabel5.BorderSizePixel = 0
+                _TextLabel5.Position = UDim2.new(0.0480000004, 0, 0.32100001, 0)
+                _TextLabel5.Size = UDim2.new(0.897727251, 0, 0.0874999985, 0)
+                _TextLabel5.Font = Enum.Font.Unknown
+                _TextLabel5.Text = 'Bounty Earned:  0'
+                _TextLabel5.TextColor3 = Color3.fromRGB(207, 207, 207)
+                _TextLabel5.TextScaled = true
+                _TextLabel5.TextSize = 14
+                _TextLabel5.TextWrapped = true
+                _TextLabel5.TextXAlignment = Enum.TextXAlignment.Left
+                _UITextSizeConstraint2.Parent = _TextLabel5
+                _UITextSizeConstraint2.MaxTextSize = 21
+                _UIAspectRatioConstraint2.Parent = _TextLabel5
+                _UIAspectRatioConstraint2.AspectRatio = 18.81
+                _TextLabel6.Parent = _Frame5
+                _TextLabel6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                _TextLabel6.BackgroundTransparency = 1
+                _TextLabel6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                _TextLabel6.BorderSizePixel = 0
+                _TextLabel6.Position = UDim2.new(0.0480000004, 0, 0.439999998, 0)
+                _TextLabel6.Size = UDim2.new(0.897727251, 0, 0.0874999985, 0)
+                _TextLabel6.Font = Enum.Font.Unknown
+                _TextLabel6.Text = 'Time Elapsed: 0h:0m:0s'
+                _TextLabel6.TextColor3 = Color3.fromRGB(207, 207, 207)
+                _TextLabel6.TextScaled = true
+                _TextLabel6.TextSize = 14
+                _TextLabel6.TextWrapped = true
+                _TextLabel6.TextXAlignment = Enum.TextXAlignment.Left
+                _UITextSizeConstraint3.Parent = _TextLabel6
+                _UITextSizeConstraint3.MaxTextSize = 21
+                _UIAspectRatioConstraint3.Parent = _TextLabel6
+                _UIAspectRatioConstraint3.AspectRatio = 18.81
+                _TextLabel7.Parent = _Frame5
+                _TextLabel7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                _TextLabel7.BackgroundTransparency = 1
+                _TextLabel7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                _TextLabel7.BorderSizePixel = 0
+                _TextLabel7.Position = UDim2.new(0.0480000004, 0, 0.559000015, 0)
+                _TextLabel7.Size = UDim2.new(0.897727251, 0, 0.0874999985, 0)
+                _TextLabel7.Font = Enum.Font.Unknown
+                _TextLabel7.Text = 'Current Bounty: ' .. format(game.Players.LocalPlayer.leaderstats['Bounty/Honor'].Value) .. '$'
+                _TextLabel7.TextColor3 = Color3.fromRGB(207, 207, 207)
+                _TextLabel7.TextScaled = true
+                _TextLabel7.TextSize = 14
+                _TextLabel7.TextWrapped = true
+                _TextLabel7.TextXAlignment = Enum.TextXAlignment.Left
+                _UITextSizeConstraint4.Parent = _TextLabel7
+                _UITextSizeConstraint4.MaxTextSize = 21
+                _UIAspectRatioConstraint4.Parent = _TextLabel7
+                _UIAspectRatioConstraint4.AspectRatio = 18.81
+                _ImageLabel.Parent = _Frame5
+                _ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                _ImageLabel.BackgroundTransparency = 1
+                _ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                _ImageLabel.BorderSizePixel = 0
+                _ImageLabel.Position = UDim2.new(0.0659090877, 0, 0.0250000004, 0)
+                _ImageLabel.Size = UDim2.new(0.0795454457, 0, 0.145833328, 0)
+                _ImageLabel.Image = 'http://www.roblox.com/asset/?id=17299894746'
+                _UIAspectRatioConstraint5.Parent = _ImageLabel
+                _TextLabel8.Parent = _Frame5
+                _TextLabel8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                _TextLabel8.BackgroundTransparency = 1
+                _TextLabel8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                _TextLabel8.BorderSizePixel = 0
+                _TextLabel8.Position = UDim2.new(0.588636339, 0, 0.875, 0)
+                _TextLabel8.Size = UDim2.new(0.397727251, 0, 0.0958333313, 0)
+                _TextLabel8.Font = Enum.Font.Unknown
+                _TextLabel8.Text = 'Discord: bit.ly/serahub'
+                _TextLabel8.TextColor3 = Color3.fromRGB(255, 255, 255)
+                _TextLabel8.TextScaled = true
+                _TextLabel8.TextSize = 14
+                _TextLabel8.TextWrapped = true
+                _UIGradient6.Color = ColorSequence.new({
+                    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 178, 23)),
+                    ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)),
+                })
+                _UIGradient6.Parent = _TextLabel8
+                _UITextSizeConstraint5.Parent = _TextLabel8
+                _UITextSizeConstraint5.MaxTextSize = 18
+                _UIAspectRatioConstraint6.Parent = _TextLabel8
+                _UIAspectRatioConstraint6.AspectRatio = 7.609
+                _TextButton4.Parent = _Frame5
+                _TextButton4.BackgroundColor3 = Color3.fromRGB(225, 146, 10)
+                _TextButton4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                _TextButton4.Position = UDim2.new(0.0477272719, 0, 0.795833349, 0)
+                _TextButton4.Size = UDim2.new(0.227272734, 0, 0.125, 0)
+                _TextButton4.Font = Enum.Font.SourceSansBold
+                _TextButton4.LineHeight = 0.91
+                _TextButton4.Text = 'Next'
+                _TextButton4.TextColor3 = Color3.fromRGB(255, 255, 255)
+                _TextButton4.TextScaled = true
+                _TextButton4.TextSize = 30
+                _TextButton4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+                _TextButton4.TextWrapped = true
+                _UITextSizeConstraint6.Parent = _TextButton4
+                _UITextSizeConstraint6.MaxTextSize = 30
+                _UIAspectRatioConstraint7.Parent = _TextButton4
+                _UIAspectRatioConstraint7.AspectRatio = 3.333
+                _TextButton5.Parent = _Frame5
+                _TextButton5.BackgroundColor3 = Color3.fromRGB(225, 146, 10)
+                _TextButton5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                _TextButton5.Position = UDim2.new(0.297727287, 0, 0.795833349, 0)
+                _TextButton5.Size = UDim2.new(0.227272734, 0, 0.125, 0)
+                _TextButton5.Font = Enum.Font.SourceSansBold
+                _TextButton5.LineHeight = 0.91
+                _TextButton5.Text = 'Reset'
+                _TextButton5.TextColor3 = Color3.fromRGB(255, 255, 255)
+                _TextButton5.TextScaled = true
+                _TextButton5.TextSize = 30
+                _TextButton5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+                _TextButton5.TextWrapped = true
+                _UITextSizeConstraint7.Parent = _TextButton5
+                _UITextSizeConstraint7.MaxTextSize = 30
+                _UIAspectRatioConstraint8.Parent = _TextButton5
+                _UIAspectRatioConstraint8.AspectRatio = 3.333
+                _UICorner8.CornerRadius = UDim.new(0.0799999982, 0)
+                _UICorner8.Parent = _Frame5
+                _UIAspectRatioConstraint9.Parent = _Frame5
+                _UIAspectRatioConstraint9.AspectRatio = 1.833
+                _UIAspectRatioConstraint10.Parent = _ScreenGui3
+                _UIAspectRatioConstraint10.AspectRatio = 2.325
+
+                _TextButton5.MouseButton1Down:Connect(function()
+                    _G.Save = {
+                        ['Bounty Earned'] = 0,
+                        ['Time Elapsed'] = 0,
+                    }
+
+                    SaveSettings()
+                end)
+                _TextButton4.MouseButton1Down:Connect(function()
+                    if getgenv().targ ~= nil then
+                        skipTarget()
+                    end
+                end)
+                spawn(function()
+                    while wait() and getgenv().shop == false do
+                        _TextLabel7.Text = 'Current Bounty: ' .. format(lp.leaderstats['Bounty/Honor'].Value) .. '$'
+                        _TextLabel5.Text = 'Bounty Earned: ' .. format(tonumber(_G.Save['Bounty Earned'])) .. '$'
+
+                        local v242 = tonumber(_G.Save['Time Elapsed'])
+                        local v243 = math.floor(v242 / 86400)
+                        local v244 = math.floor((v242 - v243 * 86400) / 3600)
+
+                        _TextLabel6.Text = 'Time Elapsed: ' .. v243 .. 'd:' .. v244 .. 'h:' .. math.floor((v242 - v244 * 3600) / 60) .. 'm:' .. v242 % 60 .. 's'
+
+                        if _TextLabel4.Text ~= 'Sera Hub - Auto Bounty' or _TextLabel8.Text ~= 'Discord: bit.ly/serahub' then
+                            nWPa()
+                        end
+                    end
+                end)
+            end
+
+            spawn(function()
+                while wait(1) and getgenv().shop == false do
+                    _G.Save['Time Elapsed'] = _G.Save['Time Elapsed'] + 1
+
+                    SaveSettings()
+                end
+            end)
+            task.spawn(function()
+                pcall(function()
+                    while task.wait() and getgenv().shop == false do
+                        if getgenv().targ == nil then
+                            target()
+                        end
+                        if getgenv().targ == nil then
+                            starthop()
+                        end
+                        if getgenv().targ and (getgenv().targ.Character:FindFirstChild('HumanoidRootPart') and game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart')) then
+                            if game.Players.LocalPlayer.Character:FindFirstChild('Humanoid') and game.Players.LocalPlayer.Character:FindFirstChild('Humanoid').Health > getgenv().config.SafeHealth then
+                                if lp.Character:FindFirstChild('Head') and (math.round((getgenv().targ.Character:WaitForChild('HumanoidRootPart').CFrame.Position - game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame.Position).Magnitude / 4) < 10 and getgenv().n == nil) then
+                                    spawn(function()
+                                        if getgenv().targ and math.round((getgenv().targ.Character:WaitForChild('HumanoidRootPart').CFrame.Position - game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame.Position).Magnitude / 4) < 10 then
+                                            task.wait(4)
+
+                                            if getgenv().targ and not getgenv().targ.Character:FindFirstChild('HumanoidRootPart') then
+                                                getgenv().n = nil
+                                            end
+                                            if getgenv().targ and math.round((getgenv().targ.Character:WaitForChild('HumanoidRootPart').CFrame.Position - game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame.Position).Magnitude / 4) < 10 then
+                                                getgenv().n = os.time()
+                                            end
+                                        end
+                                    end)
+                                end
+                                if lp.Character:FindFirstChild('Head') and ((getgenv().targ.Character:WaitForChild('HumanoidRootPart').CFrame.Position - game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame.Position).Magnitude / 4 < 2 and game:GetService('Players').LocalPlayer.PlayerGui.Main.BottomHUDList.SafeZone.Visible == true) then
+                                    skipTarget()
+                                end
+                                if getgenv().targ.Character:FindFirstChild('Head') and getgenv().targ.Character.Humanoid.Health > 0 then
+                                    if math.round((getgenv().targ.Character:WaitForChild('HumanoidRootPart').CFrame.Position - game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame.Position).Magnitude / 4) > 15000 and (Vector3.new(0, game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y, 0) - Vector3.new(0, getgenv().targ.Character.HumanoidRootPart.Position.Y, 0)).Magnitude < 15000 then
+                                        skipTarget()
+                                    end
+
+                                    to(getgenv().targ.Character.HumanoidRootPart.CFrame * CFrame.new(0, 3.5, 4.5))
+                                else
+                                    skipTarget()
+                                end
+                            else
+                                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X, getgenv().targ.Character.HumanoidRootPart.CFrame.Y, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+
+                                game.Players.LocalPlayer.Character:WaitForChild('Humanoid'):UnequipTools()
+
+                                if getgenv().targ.Character.Humanoid.Health <= 0 then
+                                    skipTarget()
+                                else
+                                    to(getgenv().targ.Character.HumanoidRootPart.CFrame * CFrame.new(0, 10000, 0))
+                                end
+                            end
+                        end
+                    end
+                end)
+            end)
+            task.spawn(function()
+                wait(1200)
+                starthop()
+            end)
+            spawn(function()
+                while wait() and getgenv().shop == false do
+                    local _Character3 = game.Players.LocalPlayer.Character
+                    local v246, v247, v248 = pairs(_Character3:GetChildren())
+
+                    while true do
+                        local v249
+
+                        v248, v249 = v246(v247, v248)
+
+                        if v248 == nil then
+                            break
+                        end
+                        if v249:IsA('BasePart') then
+                            v249.CanCollide = false
+                        end
+                    end
+                end
+            end)
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/LumosSera/Serra/refs/heads/main/bng.lua'))()
+            task.spawn(function()
+                pcall(function()
+                    while wait(0.7) do
+                        if getgenv().targ and getgenv().targ.Character.Humanoid.Health > getgenv().targ.Character.Humanoid.MaxHealth * 0.1 then
+                            local _VirtualUser = game:GetService('VirtualUser')
+
+                            _VirtualUser:CaptureController()
+                            _VirtualUser:ClickButton1(Vector2.new(851, 158), game:GetService('Workspace').Camera.CFrame)
+                        end
+                    end
+                end)
+            end)
+
+            local v251 = require(game:GetService('Players').LocalPlayer.PlayerScripts.CombatFramework)
+            local u252 = getupvalues(v251)[2]
+
+            require(game.ReplicatedStorage.Util.CameraShaker):Stop()
+            spawn(function()
+                game:GetService('RunService').Stepped:Connect(function()
+                    pcall(function()
+                        u252.activeController.hitboxMagnitude = 55
+
+                        if game.Players.LocalPlayer.Character:FindFirstChild('Black Leg') then
+                            u252.activeController.timeToNextAttack = 3
+                        elseif game.Players.LocalPlayer.Character:FindFirstChild('Electro') then
+                            u252.activeController.timeToNextAttack = 2
+                        else
+                            u252.activeController.timeToNextAttack = 0
+                        end
+
+                        u252.activeController.attacking = false
+                        u252.activeController.increment = 3
+                        u252.activeController.blocking = false
+                        u252.activeController.timeToNextBlock = 0
+                        game.Players.LocalPlayer.Character.Humanoid.Sit = false
+                    end)
+                end)
+            end)
+        else
+            Neww('SeraHub: Please make your config to use this script', 4)
+        end
+    end
+end
+
+if isfile('SeraHub/key.txt') then
+    checkKLumos45()
+end
