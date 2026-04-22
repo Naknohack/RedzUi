@@ -3736,8 +3736,9 @@ function CheckItemBPCRBPCR(v463)
         end
     end
 end
-local vu32 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naknohack/RedzUi/refs/heads/main/UiRedzhub.lua"))()
-local v466 = vu32:MakeWindow({
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naknohack/RedzUi/refs/heads/main/UiRedzhub.lua"))()
+
+local v466 = Library:MakeWindow({
     Title = "Redz Hub Fake",
     SubTitle = "By Naknohack",
     SaveFolder = "Redz | redz lib v5.lua"
