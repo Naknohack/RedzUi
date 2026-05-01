@@ -91,8 +91,6 @@ if ({
     elseif _PlaceId == 7449423635 then
         World3 = true
     end
-else
-    game.Players.LocalPlayer:Kick('Unsupported Game')
 end
 
 repeat
